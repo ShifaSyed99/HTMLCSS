@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //using array literal
+        let emp = ["tom", "jerry", 1];
+        document.write(emp);
+        console.log(emp);
+        document.write("<br>");
+
+        let a1 = new Array("Java", "Python", "Spring", 22, 21.5)
+        document.write(a1);
+        console.log(a1);
+        document.write("<br>");
+
+        let a2 = new Array(5);
+        a2[0] = 1;
+        a2[1] = 2;
+        a2[2] = 3;
+        a2[3] = 4;
+        a2[4] = 5;
+        
+        console.log(a2);
+
+        console.log(a2[0]);
+        
+        console.log(a2[2]);
+    
+        console.log(a2.length-1);
+
+        let x = a2[a2.length-1];
+        console.log(x);
+       
+        //modify data
+        console.log(a1);
+        a1[1] = "SpringBooot" ;
+        console.log(a1);
+
+        //add the elements
+        a1.push("Node.js","Angular");
+        console.log(a1);
+
+        a1.unshift("RStudio", "PowerBI");
+        console.log(a1);
+
+        //iterate
+
+        for(var i = 0; i<a1.length; i++)
+        console.log(a1[i]);
+
+        let fname = ["Shifa", "Sakshi"];
+        let lname = ["Syed", "Visal"];
+        console.log(fname.concat(lname));
+
+        console.log(fname.toString());
+        
+        //removes end element
+        a1.pop()
+        console.log(a1)
+        
+        //removes first element
+        a1.shift()
+        console.log(a1)
+
+        var no = [10, 25, 30, 45, 50, 65, 70];
+        function evenno(x) {
+            return x%2 ==0;
+        }
+
+        console.log(no.filter(evenno));
+
+        var fn = prompt("Enter Your First Name ");
+        var ln = prompt("Enter Your Last Name ");
+        console.log(fn+" "+ln );
+    </script>
+</body>
+</html>
