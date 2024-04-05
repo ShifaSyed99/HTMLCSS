@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM by tag Name</title>
+</head>
+<body>
+    <p>JS is JavaScript</p>
+    <p>HTML is HyperText Markup Language</p>
+
+    <button type = "submit" onclick = "change()">change Style</button>
+
+    <script>
+        function change() {
+            let x = document.getElementsByTagName("p");
+            x[0].style.color = "red";
+           // x[0].style.background = "black02"
+        }
+    </script>
+</body>
+</html>
