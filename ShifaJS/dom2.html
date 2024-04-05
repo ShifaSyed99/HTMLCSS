@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+   <script>
+        function add() {
+            let n1 = Number(document.getElementById("v1").value);
+
+            let n2 = Number(document.getElementById("v2").value);
+
+            let add = n1+n2;
+            document.getElementById("p1").innerHTML= add;
+            document.getElementById("p1").style.color = "red";
+            console.log("Addition is: "+add);
+        }
+   </script>
+
+    <label>Enter First Value</label>
+    <input type = "text" id = "v1">
+
+        <label>Enter First Value</label>
+    <input type = "text" id = "v2">
+
+    <p id = "p1">Result</p>
+
+   <button type = "submit" onclick = "add()">Add</button>
+</body>
+</html>

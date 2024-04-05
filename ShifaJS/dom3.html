@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM by Name</title>
+</head>
+<body>
+    <script>
+        function c() {
+            var x = document.getElementsByName("para1");
+            alert("Total no of paragraphs in the form "+x.length);
+        }
+    </script>
+    <h1>HTML</h1>
+    <p name = "para1">JS JSon File</p>
+    <p name = "para1">JavaScript</p>
+    <button type = "submit" onclick = "c()">Count</button>
+</body>
+</html>

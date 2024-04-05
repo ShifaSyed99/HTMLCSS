@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String</title>
+</head>
+<body>
+    <script>
+        var str1 = "Tom";
+        var str2 = new String("Jerry");
+
+        console.log(str1);
+        console.log(str2);
+        console.log(str1.concat(str2));
+        
+
+        console.log(str2.charAt(1));
+
+        var s1 = str2.toUpperCase();
+        console.log(s1)
+
+        var s2 = s1.toLowerCase();
+        console.log(s2);
+
+        //bydefault first character
+        console.log(s2.charAt());
+
+        //last character
+        console.log(s2.charAt(s2.length-1));
+
+        var lang = "Spring Micro";
+        console.log(lang);
+        console.log(lang.replace("Micro", "Boot"));
+
+
+
+    </script>
+</body>
+</html>

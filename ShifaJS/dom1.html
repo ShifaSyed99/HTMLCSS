@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM By ID</title>
+</head>
+<body>
+    <script>
+        function change() {
+            var x = document.getElementById("h");
+            x.style.color = "red";
+        }
+
+        function msg() {
+            var y = document.getElementById("p1");;
+            y.innerHTML = "A Server Side Scripting Language";
+        }
+    </script>
+    <h1 id = "h">JavaScript</h1>
+    <p id = "p1">A Scripting language </p>
+    <button type = "submit" onclick = "change()">Change Color </button>
+    <button type = "submit" onclick = "msg()">Change Text </button>
+</body>
+</html>

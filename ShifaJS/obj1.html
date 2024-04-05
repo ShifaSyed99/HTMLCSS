@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object creation using JS</title>
+</head>
+<body>
+    <script>
+        var emp = {
+            fname : "Jane",
+            lname : "Doe"
+        };
+
+        console.log(emp.fname+" "+emp.lname);
+
+        function show() {
+            rollno = 1;
+            name = "Tom";
+            console.log(rollno+" "+name)
+        }
+        var x = new show();
+
+        //by object class instance
+
+        var product = new Object();
+        product.id = 1;
+        product.name = "Speakers";
+        product.price = 2000;
+
+        console.log(product.id+" "+product.name+" "+product.price);
+
+        function cust(id, name, city) {
+            this.id = id;
+            this.name = name;
+            this.city = city;
+        }
+
+        c = new cust(3, "Tom","Mumbai");
+        console.log(c);
+
+        class stud{
+            constructor(name, addr) {
+                this.name = name;
+                this.addr = addr;
+            }
+
+        }
+        var c1 = new stud("Jerry", "Airoli");
+        console.log(c1.name+" "+c1.addr);
+
+        class Calculations{
+            constructor(n1,n2) {
+                this.n1 = n1;
+                this.n2 = n2;
+            }
+            add() {
+                console.log(this.n1+this.n2);
+            }
+            sub() {
+                console.log(this.n1-this.n2);
+            }
+            mul() {
+                console.log(this.n1*this.n2);
+            }
+            div() {
+                console.log(this.n1/this.n2);
+            }
+        }
+        let cal1 = new Calculations(10, 5);
+        cal1.add();
+
+        let cal2 = new Calculations(10, 5);
+        cal1.sub();
+
+        let cal3 = new Calculations(10, 5);
+        cal1.mul();
+
+        let cal4 = new Calculations(10, 5);
+        cal1.div();
+    </script>
+</body>
+</html>
