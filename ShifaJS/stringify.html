@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stringify</title>
+</head>
+<body>
+    <script>
+        const stud = {
+            rno : 1,
+            name : "Jane Doe",
+            age : 22
+        }
+        console.log(typeof(stud))
+        const x = JSON.stringify(stud);
+
+        console.log(x);
+
+        const emp = `{
+            "empId" : 2,
+            "empName" : "Jon Smith",
+            "deptName" : "Trainee",
+            "desig" : "Java Trainer"
+        }`
+
+        console.log(typeof(emp))
+        const y =  JSON.stringify(emp);
+
+        console.log(emp);
+    </script>
+</body>
+</html>

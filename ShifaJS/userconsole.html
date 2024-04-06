@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>user Console Input</title>
+</head>
+<body>
+    
+        <label> Enter Your First Name
+            <input type = "text" id = "i1">
+        </label>
+        <br><br>
+        <label> Enter Your Last Name
+            <input type = "text" id = "i2"> 
+        </label>
+        
+    
+    <script>
+        function submit() {
+        var x = document.getElementById("i1").value;
+        var y = document.getElementById("i2").value;
+        console.log(x+" "+y);
+        }
+        
+    </script>
+    <button type="submit" class = "btn btn-outline-primar" value="click" onclick="submit()">Submit</button>
+</body>
+</html>
